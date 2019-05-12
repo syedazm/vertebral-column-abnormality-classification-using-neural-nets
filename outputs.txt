@@ -1,0 +1,18 @@
+After 'adam': Accuracy: 77.41935483870968%
+
+
+best_parameters: 
+{'optimizer': 'adam', 'epochs': 120, 'batch_size': 5}
+
+optimized best_accuracy: 
+0.8870967741935484
+
+After fourth hidden layer units=3, softmax activation for o/p layer: Accuracy: 30.64516129032258%
+
+"  		"	"	", sigmoid "		"	"  : Accuracy: 77.41935483870968%
+
+softmax activation for o/p layer: Accuracy: 30.64516129032258%
+
+SGD optimizer: Accuracy: 69.35483870967742%
+
+rmsprop optimizer: Accuracy: 79.03225806451613%
