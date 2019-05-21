@@ -33,8 +33,8 @@ def dataSetAnalysis(df):
 
 dataSetAnalysis(dataset)
 
-X = dataset.iloc[:,2:] # [all rows, col from index 2 to the last one excluding 'Unnamed: 32']
-y = dataset.iloc[:,1] # [all rows, col one only which contains the classes of cancer]
+X = dataset.iloc[:,2:] 
+y = dataset.iloc[:,1] 
 
 from sklearn.preprocessing import LabelEncoder
 
@@ -56,6 +56,10 @@ from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
+
+# using grid search to fine tune the hyper parameters
+# uncomment the following lines if you want to run this grid search.
+
 
 #from keras.wrappers.scikit_learn import KerasClassifier
 #from sklearn.model_selection import GridSearchCV
